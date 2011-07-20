@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby -wKU
+$LOAD_PATH << "./lib"
+
+require 'workflow'
+
+path = ARGV[0]
+
+puts retval = `git reset -- #{path}`
